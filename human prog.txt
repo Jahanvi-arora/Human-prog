@@ -1,0 +1,83 @@
+import os
+import pyttsx3 as pt
+import subprocess
+import time
+print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+print("**********************WELCOME TO MY ASSISTANT***********************************")
+print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+pt.speak("Welcome to my AI assistant")
+print("\n \n ")
+print("*************************AVAILABLE SOFTWARE*************************************")
+print("""    1. GOOGLE CHROME                                        2. VLC PLAYER
+    3. NOTEPAD                                                 4. MICROSOFT WORD
+    5. ADOBE ACROBAT READER                                    6. MICROSOFT POWERPOINT
+    7. MICROSOFT EXCEL                                         8. CALCULATOR
+    9. Snipping Tool                                          10. VMware WORKSTATION
+   11. DEV C++                                                12. PAINT
+   13. CAMERA                                                 14. ORACLE SQL
+   15. NETBEANS
+       """)
+print("**********************************************************************************")
+
+while(True):
+    time.sleep(2)
+    pt.speak(" How Can I Help you Sir ")
+    print(" \n What Software Do You Want to open:  ",end=' ')
+    p = input()
+    if(("run" in p or "execute" in p or "open" in p) and ("notepad"  in p or "editor" in p)):
+     pt.speak("Their is Notepad For You ")
+     os.system("notepad")
+    elif(("run" in p or "execute" in p or "open" in p) and ("vlc"  in p or "Vlc" in p)):
+        pt.speak(" Their is VLC Media Player for you")
+        os.system("vlc")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Chrome"  in p or "chrome" in p)):
+        pt.speak("Their is Google Chrome for you ")
+        os.system("chrome")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Word"  in p or "word" in p)):
+        pt.speak("Their is Microsoft Word For you")
+        os.system("WINWORD")
+    elif(("run" in p or "execute" in p or "open" in p) and ("adobe"  in p or "reader" in p)):
+        pt.speak("Their is Adobe Acrobat Reader for you ")
+        os.system("AcroRd32")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Powerpoint"  in p or "powerpoint" in p)):
+        pt.speak("Their is Microsoft Powerpoint For you")
+        os.system("POWERPOINT")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Excel"  in p or "excel" in p)):
+        pt.speak("Their is Microsoft Excel for you")
+        os.system("EXCEL")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Calculator"  in p or "calculator" in p)):
+        pt.speak("Their is Calculator for you")
+        os.system("calc.exe")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Snipping"  in p or "snipping" in p)):
+        pt.speak("Their is Snipping Tool for you")
+        os.system("SnippingTool")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Vmware"  in p or "vmware" in p)):
+        pt.speak(" Their is VMware Workstation for you")
+        os.system("vmware")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Netbeans"  in p or "netbean" in p)):
+        pt.speak("Their is Netbeans Software for you ")
+        os.system("netbeans")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Dev"  in p or "dev" in p or "c++" in p or "C++" in p)):
+        pt.speak("Their is Dev C++ for you ")
+        os.system("devcpp")
+    elif(("run" in p or "execute" in p or "open" in p) and ("Camera"  in p or "camera" in p)):
+        pt.speak(" Their is Camera for you ")
+        subprocess.run('start microsoft.windows.camera:',shell=True)
+    elif(("run" in p or "execute" in p or "open" in p) and ("Paint"  in p or "paint" in p)):
+        pt.speak("Their is Paint for you ")
+        os.system("mspaint")
+    elif(("run" in p or "execute" in p or "open" in p) and ("SQL"  in p or "Sql" in p or "sql" in p)):
+        pt.speak("Their is Oracle SQL for you")
+        os.system("sqlplus")
+    elif(("dont"  in p or "don't" in p or "close" in p or  "Close" in p)):
+        break
+    else:
+      pt.speak(" No Software present in this system You Can open Another Software ")
+      
+print("\n \n")
+pt.speak("Thankyou for using this tool")
+print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+print("***************************THANKYOU FOR USING THIS TOOL*****************************")
+print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+
+
